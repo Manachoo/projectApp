@@ -1,0 +1,39 @@
+:root{
+    --firstColor: #a82ec0;
+    --firstColorSecond: #772177;
+    --titleColor: rgb(0, 0, 0);
+    --inputColor: #e4e4e4;
+    --scrollBarColor:hsl(var(--hueColor),12%,90%);
+    --scrollThumbColor:hsl(var(--hueColor),12%,76%);
+}
+body.dark_theme{
+    --textColor:rgb(134, 132, 132);
+    --titleColor:white;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 0 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1,h2,h3{
+    color: var(--titleColor);
+    font-weight: 600;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--titleColor);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
