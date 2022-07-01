@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\SessionController;
+use App\Http\Controllers\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('Home');
 });
+
+route::get('/login',[SessionController::class,'create'])->name('login.index');
+route::get('/register',[RegisterController::class,'create'])->name('register.index');
