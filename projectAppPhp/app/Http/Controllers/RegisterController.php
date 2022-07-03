@@ -12,7 +12,7 @@ class RegisterController extends Controller
     }
 
     public function store(){
-        $user = user::create(request(['email','password']));
+        $user = user::create(request(['rut','nombre','email','password']));
         auth()->login($user);
         return redirect()->to('/');
     }

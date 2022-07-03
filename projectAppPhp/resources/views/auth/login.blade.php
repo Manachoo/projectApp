@@ -3,7 +3,8 @@
 @extends('layaout')
 @section('content')
     <section class="section__login">
-        <form class="container" method="POST" action="">
+        <div class="div__login">
+        <form class="container container__login" method="POST" action="">
             <h4>Porfavor ingresa tus datos:</h4>
             <!-- Email input -->
             <div class="form-outline mb-4">
@@ -36,5 +37,6 @@
                 <p>Not a member? <a href="#!">Register</a></p>
             </div>
         </form>
+    </div>
     </section>
 @endsection

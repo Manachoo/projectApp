@@ -21,14 +21,17 @@ html{
 h4{
     margin-bottom: 1.6rem;
 }
-.section__login{
+.div__login{
     width: 25rem;
-    margin: 0 auto;
-    margin-top: 3rem;
-    margin-bottom: 4rem;
-    background-color: rgb(228, 228, 228);
+    margin: 0.5rem auto;
     border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: -2px 2px 2px 2px rgba(0,0,0,0.75);
 }
 .button__login{
     width: 100%;
+}
+.section__login{
+    margin-top: 3rem;
+    margin-bottom: 5.6rem;
 }
