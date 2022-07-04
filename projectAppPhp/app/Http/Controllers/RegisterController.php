@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Model\User;
+use App\Models\User;
+
 class RegisterController extends Controller
 {
     public function create()
@@ -12,7 +13,7 @@ class RegisterController extends Controller
     }
 
     public function store(){
-        $user = user::create(request(['rut','nombre','email','password']));
+        $user = user::create(request(['name','email','password']));
         auth()->login($user);
         return redirect()->to('/');
     }

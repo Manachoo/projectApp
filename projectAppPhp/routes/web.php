@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 route::get('/login',[SessionController::class,'create'])->name('login.index');
 route::get('/register',[RegisterController::class,'create'])->name('register.index');
+route::post('/register',[RegisterController::class,'store'])->name('register.store');
