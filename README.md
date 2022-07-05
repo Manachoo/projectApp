@@ -1,2 +1,2 @@
 # projectApp
-Project created with friends
+project created for my university degree

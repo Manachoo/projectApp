@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 @extends('layaout')
 @section('content')
     <section class="vh-100" style="background-color: #eee;">
@@ -16,7 +17,8 @@
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <input type="text" id="form3Example1c" class="form-control" id="name" name="name"/>
+                                                <input type="text" id="form3Example1c" class="form-control"
+                                                    id="name" name="name" />
                                                 <label class="form-label" for="form3Example1c">Ingrese su Nombre</label>
                                             </div>
                                         </div>
@@ -24,14 +26,16 @@
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <input type="email" id="form3Example3c" class="form-control" id="email" name="email"/>
+                                                <input type="email" id="form3Example3c" class="form-control"
+                                                    id="email" name="email" />
                                                 <label class="form-label" for="form3Example3c">Ingresa tu email</label>
                                             </div>
                                         </div>
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <input type="password" id="form3Example4c" class="form-control" id="password" name="password"/>
+                                                <input type="password" id="form3Example4c" class="form-control"
+                                                    id="password" name="password" />
                                                 <label class="form-label" for="form3Example4c">Ingresa tu contraseña</label>
                                             </div>
                                         </div>
@@ -39,7 +43,8 @@
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <input type="password" id="form3Example4cd" class="form-control" id="password_confirmation" name="password_confirmation"/>
+                                                <input type="password" id="form3Example4cd" class="form-control"
+                                                    id="password_confirmation" name="password_confirmation" />
                                                 <label class="form-label" for="form3Example4cd">Repite tu contraseña</label>
                                             </div>
                                         </div>
@@ -61,7 +66,7 @@
                                 </div>
                                 <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
 
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
                                         class="img-fluid" alt="Sample image">
                                 </div>
                             </div>

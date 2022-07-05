@@ -10,14 +10,18 @@ body.dark_theme{
     --textColor:rgb(134, 132, 132);
     --titleColor:white;
 }
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0 0 0;
-}
 html{
     scroll-behavior: smooth;
 }
-h4{
-    margin-bottom: 1.6rem;
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.footer__item{
+    color: gray;
+}
+.footer__item:hover{
+    color: black;
 }

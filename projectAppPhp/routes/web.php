@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\PerfilController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,5 +20,9 @@ Route::get('/', function () {
 });
 
 route::get('/login',[SessionController::class,'create'])->name('login.index');
+route::post('/login',[SessionController::class,'store'])->name('login.store');
 route::get('/register',[RegisterController::class,'create'])->name('register.index');
 route::post('/register',[RegisterController::class,'store'])->name('register.store');
+route::get('/logout',[SessionController::class,'destroy'])->name('logout.index');
+
+route::get('/perfil',[PerfilController::class,'index'])->name('perfil.index');
