@@ -26,3 +26,16 @@ route::post('/register',[RegisterController::class,'store'])->name('register.sto
 route::get('/logout',[SessionController::class,'destroy'])->name('logout.index');
 
 route::get('/perfil',[PerfilController::class,'index'])->name('perfil.index');
+
+route::get('/buscar',[SearchController::class,'index'])->name('search.index');
+route::post('/buscar',[SearchController::class,'store'])->name('search.store');
+
+Route::get('/nosotros', function () {
+    return view('Nosotros');
+});
+Route::get('/contacto', function () {
+    return view('Contacto');
+});
+Route::get('/inicio', function () {
+    return view('Inicio');
+});

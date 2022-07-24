@@ -21,11 +21,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="/" class="nav-item nav-link active">Inicio</a>
-                        <a href="#" class="nav-item nav-link">Nosotros</a>
-                        <a href="#" class="nav-item nav-link">Contacto</a>
+                        <a href="/inicio" class="nav-item nav-link active">Inicio</a>
+                        <a href="/nosotros" class="nav-item nav-link">Nosotros</a>
+                        <a href="/contacto" class="nav-item nav-link">Contacto</a>
                         @auth
                         <a href="" class="nav-item nav-link active">Preguntas</a>
+                        <a href="{{ route('Search.index') }}" class="nav-item nav-link">Buscar paciente</a>
                         @endauth
                     </div>
                     <div class="navbar-nav ms-auto">
