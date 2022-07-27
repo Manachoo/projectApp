@@ -22,21 +22,24 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <a href="/inicio" class="nav-item nav-link active">Inicio</a>
-                        <a href="/nosotros" class="nav-item nav-link">Nosotros</a>
-                        <a href="/contacto" class="nav-item nav-link">Contacto</a>
+                        <a href="/nosotros" class="nav-item nav-link active">Nosotros</a>
+                        <a href="/contacto" class="nav-item nav-link active">Contacto</a>
                         @auth
-                        <a href="" class="nav-item nav-link active">Preguntas</a>
-                        <a href="{{ route('Search.index') }}" class="nav-item nav-link">Buscar paciente</a>
+                        <a href="{{ route('questions.index') }}" class="nav-item nav-link active">Preguntas</a>
+                        <form class="d-flex" role="search" type="get" action="{{url('/buscar')}}">
+                            <input class="form-control me-2" type="search" name="buscar" placeholder="nombre del paciente" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                          </form>
                         @endauth
                     </div>
                     <div class="navbar-nav ms-auto">
                       @auth
-                        <a href="{{ route('perfil.index') }}" class="nav-item nav-link">{{ Auth()->user()->name }}</a>
-                        <a href="{{ route('logout.index') }}" class="nav-item nav-link">Cerrar Sesión</a>
+                        <a href="{{ route('perfil.index') }}" class="nav-item nav-link active">{{ Auth()->user()->name }}</a>
+                        <a href="{{ route('logout.index') }}" class="nav-item nav-link active">Cerrar Sesión</a>
                       @endauth
                       @guest
-                      <a href="{{ route('register.index') }}" class="nav-item nav-link">Registrarse</a>
-                      <a href="{{ route('login.index') }}" class="nav-item nav-link">Iniciar session</a>
+                      <a href="{{ route('register.index') }}" class="nav-item nav-link active">Registrarse</a>
+                      <a href="{{ route('login.index') }}" class="nav-item nav-link active">Iniciar session</a>
                       @endguest
                     </div>
                 </div>
@@ -56,7 +59,7 @@
             <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
               <h5 class="text-uppercase mb-4">OUR WORLD</h5>
-    
+
               <ul class="list-unstyled mb-4">
                 <li>
                   <a href="#!" class="footer__item">Inicio</a>
@@ -73,11 +76,11 @@
               </ul>
             </div>
             <!--Grid column-->
-    
+
             <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
               <h5 class="text-uppercase mb-4">Assistance</h5>
-    
+
               <ul class="list-unstyled">
                 <li>
                   <a href="#!" class="footer__item">Contact us</a>
@@ -97,16 +100,16 @@
               </ul>
             </div>
             <!--Grid column-->
-    
+
             <!--Grid column-->
             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 mx-4">
               <h5 class="text-uppercase mb-4">Sign up to our newsletter</h5>
-    
+
               <div class="form-outline form-white mb-4">
                 <input type="email" id="form5Example2" class="form-control" />
                 <label class="form-label" for="form5Example2">Email address</label>
               </div>
-    
+
               <button type="submit" class="btn btn-block">Subscribe</button>
             </div>
             <!--Grid column-->

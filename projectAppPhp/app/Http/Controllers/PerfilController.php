@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class PerfilController extends Controller
 {
@@ -11,8 +12,12 @@ class PerfilController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function show($name)
     {
-        return view('Perfil');
+        $user = User::find($name);
+        $name = $user->name;
+        return view('perfil', ['user' => $user]);
     }
+
+
 }

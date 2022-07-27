@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PerfilController;
+use App\Http\Controllers\SearchController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,11 +25,11 @@ route::post('/login',[SessionController::class,'store'])->name('login.store');
 route::get('/register',[RegisterController::class,'create'])->name('register.index');
 route::post('/register',[RegisterController::class,'store'])->name('register.store');
 route::get('/logout',[SessionController::class,'destroy'])->name('logout.index');
-
 route::get('/perfil',[PerfilController::class,'index'])->name('perfil.index');
 
-route::get('/buscar',[SearchController::class,'index'])->name('search.index');
-route::post('/buscar',[SearchController::class,'store'])->name('search.store');
+route::get('/questions',[QuestionsController::class,'index'])->name('questions.index');
+route::get('/buscar',[SearchController::class,'buscarUsuario'])->name('search.index');
+route::get('Usuario/{id_user}',[PerfilController::class,'show'])->name('perfil.show');
 
 Route::get('/nosotros', function () {
     return view('Nosotros');
