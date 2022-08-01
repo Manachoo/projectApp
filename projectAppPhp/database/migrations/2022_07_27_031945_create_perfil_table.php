@@ -15,9 +15,12 @@ return new class extends Migration
     {
         Schema::create('perfil', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
+            $table->string('name');
+            $table->string('lastname');
             $table->string('rut')->unique();
             $table->string('email')->unique();
+            $table->string('contact');
+            $table->string('direction');
             $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
         });

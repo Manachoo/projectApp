@@ -12,6 +12,7 @@ body.dark_theme{
 }
 html{
     scroll-behavior: smooth;
+
 }
 li{
     list-style: none;
@@ -25,3 +26,4 @@ a{
 .footer__item:hover{
     color: black;
 }
+

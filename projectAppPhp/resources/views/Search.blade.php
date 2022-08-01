@@ -15,7 +15,7 @@
                     <td>Rut: {{$user->rut}}</td>
                     <td>Nombres: {{$user->name}}</td>
                     <td>Email: {{$user->email}}</td>
-                    <td><a href="Usuario/{{$user->$id_user}}"><button class="btn btn-primary">perfil</button></a>
+                    <td><a href="{{ route('perfil.index') }}"><button class="btn btn-primary">perfil</button></a>
                     </td>
                 </tr>
             @endforeach

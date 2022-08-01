@@ -21,7 +21,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="/inicio" class="nav-item nav-link active">Inicio</a>
+                        <a href="/" class="nav-item nav-link active">Inicio</a>
                         <a href="/nosotros" class="nav-item nav-link active">Nosotros</a>
                         <a href="/contacto" class="nav-item nav-link active">Contacto</a>
                         @auth
